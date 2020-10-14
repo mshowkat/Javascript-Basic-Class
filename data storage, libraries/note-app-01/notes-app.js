@@ -19,25 +19,26 @@ const notes = [{
 // localStorage.clear()
 
 
-//local storage only store string.
-//JSON (javascript object notation) it wil converts our object into string
+// local storage only store string.
+// JSON (javascript object notation) it wil converts our object into string
 
 // <<------------------------------------------------------------------------------------->>
 // <<------------------------------------------------------------------------------------->>
 
-// const user = {
-//     name: 'robert',
-//     age: 85
-// }
+const user = {
+    name: 'robert',
+    age: 85
+}
 
-// const userJSON = JSON.stringify(user)
+const userJSON = JSON.stringify(user)
 // console.log(userJSON)
+// console.log(user)
 
 // localStorage.setItem('user', userJSON)
-// const getUserJSON = localStorage.getItem('user')
-// const getUser = JSON.parse(getUserJSON)
+const getUserJSON = localStorage.getItem('user')
+const getUser = JSON.parse(getUserJSON)
 // console.log(getUser)
-// console.log(`${getUser.name} is ${getUser.age} years old`)
+console.log(`${getUser.name} is ${getUser.age} years old`)
 
 // <<------------------------------------------------------------------------------------->>
 // <<------------------------------------------------------------------------------------->>
