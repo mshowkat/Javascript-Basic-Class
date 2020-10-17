@@ -6,9 +6,6 @@ https://devtopedia.com/
 ### Youtube Channel: 
 https://tinyurl.com/y3mt3d4u
 #### --------------------------------------------------->>>
-### GitHub: 
-https://github.com/mshowkat/Javascript-Basic-Class
-#### --------------------------------------------------->>>
 ## Day 1 topic: variables, boolean operators & logical operators
 ### DAY 1 video: 
 https://youtu.be/A1Hyj0QwEY8
