@@ -4,7 +4,7 @@
 
 //----------------------------------------------------------------->>>
 //----------------------------------------------------------------->>>
-//before using callback function 
+// before using callback function 
 
 
 // let showLoading = () => {
@@ -28,7 +28,29 @@
 
 //----------------------------------------------------------------->>>
 //----------------------------------------------------------------->>>
-//after using callback function
+// after using callback function
+
+let showLoading = () => {
+    console.log('1 loading icon')
+}
+
+let hideloading = () => {
+        console.log('4 loading icone hide')
+}
+
+let getData = (smileback)=> {
+    console.log('2 fetching data')
+    setTimeout (()=> {
+        console.log('3 finished pulling data')
+        smileback()
+    }, 2000)
+}
+showLoading()
+getData(hideloading)
+
+//----------------------------------------------------------------->>>
+//----------------------------------------------------------------->>>
+
 
 // let showLoading = () => {
 //     console.log('1 is loading')
@@ -42,27 +64,7 @@
 //     }, 2000)
 // }
 
-
-//----------------------------------------------------------------->>>
-//----------------------------------------------------------------->>>
-showLoading()
-getData(()=>{
-    console.log('4 loading hidden')
-})
-
-let showLoading = () => {
-    console.log('1 is loading')
-}
-
-let getData = (callback)=> {
-    console.log('2 fetching data')
-    setTimeout (()=> {
-        console.log('3 finished pulling data')
-        callback()
-    }, 2000)
-}
-
-showLoading()
-getData(()=>{
-    console.log('4 loading hidden')
-})
+// showLoading()
+// getData(()=>{
+//     console.log('4 loading hidden')
+// })
